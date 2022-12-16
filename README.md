@@ -4,8 +4,6 @@
 
 * Windows, Web Browser and Total Commander
 
-* Complete control  
-
 * [Peter Buchmann](https://pbberlin.github.io/)  
   7th December 2021
 
@@ -116,7 +114,7 @@ These work in most web browsers
 ![Asking Bill Gates to shup up](key-alt-f4.jpg)  
 &nbsp; &nbsp; &nbsp; Asking Bill Gates to shup up
 
-`CNTRL+SHIFT+ESC` -- Task manager  
+`CTRL+SHIFT+ESC` -- Task manager  
 requires some finger acrobatic, dubbed "ape grip"
 
 `CTRL-TAB` -- Next browser tab  
