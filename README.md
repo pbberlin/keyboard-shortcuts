@@ -27,13 +27,15 @@ Letters `X-C-V` are neighbors on the keyboard
 
 * In Excel, Word, Notepad++, Stata Editor
 
-### Usgae for files
+### Usage for files
 
-* Exchanging files in Windows Explorer
+* in Windows Explorer
 
-* Exchanging files or shortcuts on the Windows Desktop
+![file exchange windows exploer](explorer-file-exchange.jpg)
 
-* Exchanging files with Terminal Servers
+* files and icons on the Windows Desktop
+
+* file exchange with Terminal Servers
 
 * Even works in "Save as" dialogs
 
@@ -53,7 +55,7 @@ Letters `X-C-V` are neighbors on the keyboard
 
 `WIN-D`  --   Desktop in den Vordergrund
 
-`WIN-L`  --   Lock computer - (on leaving your desk)
+`WIN-L`  --   Lock computer - (leave your desk)
 
 `WIN-R`  --   Execute any program (mnemonic: run)
 
@@ -69,9 +71,13 @@ Letters `X-C-V` are neighbors on the keyboard
 
 `WIN-R   chrome`  - or firefox...
 
+`WIN-I   settings`
+
 `WIN-R   taskmgr` - task manager
 
-### Shutdown a program without discussion
+`WIN-R   msinfo32` - system information
+
+### Shutdown a program without any resistance
 
 `WIN-R   taskkill /IM chrome.exe /F`
 
@@ -79,7 +85,7 @@ Letters `X-C-V` are neighbors on the keyboard
 
 ## Web browser and tabs
 
-These work in most web browsers
+These work `Firefox` and `Chrome` and most other web browsers
 
 `CTRL-T`  -- open new tab
 
@@ -89,7 +95,8 @@ These work in most web browsers
 
 `CTRL-L` -- cursor into address bar (for entering an URL)
 
-`CTRL-TAB` -- next browser tab
+`CTRL-TAB` -- next browser tab  
+`CTRL-SHIFT TAB` -- previous browser tab  
 
 `CTRL-D` -- bookmark add/edit (mnemonic a<b>D</b>d bookmark)
 
@@ -97,7 +104,7 @@ These work in most web browsers
 
 `CTRL-H` -- browsing history
 
-## Handling windows
+## Desktop windows
 
 `ALT-SPACE` -- Window menu  
 
@@ -105,17 +112,18 @@ These work in most web browsers
 
 ![ALT-SPACE X](key-alt-space-x.jpg) -->
 
+![alt text](window-menu.jpg)
+
+
 `WIN-RIGHT`  --  Resize to right half of screen
 
-`ALT-TAB` -- Next window
+`ALT-TAB`       -- Next window  
+`ALT-SHIFT-TAB` -- Previous window
 
 `ALT-F4` -- Close  
 
 ![Asking Bill Gates to shup up](key-alt-f4.jpg)  
-&nbsp; &nbsp; &nbsp; Asking Bill Gates to shup up
-
-`CTRL+SHIFT+ESC` -- Task manager  
-requires some finger acrobatic, dubbed "ape grip"
+&nbsp; &nbsp; &nbsp; Mnemonic aid: Protest against speaker Bill Gates: 'shup up'
 
 `CTRL-TAB` -- Next browser tab  
 `CTRL-SHIFT TAB` -- Previous browser tab
@@ -123,6 +131,10 @@ requires some finger acrobatic, dubbed "ape grip"
 Same purpose - but in MS office:  
 `CTRL-F6` -- Next open word/excel document  
 `CTRL-SHIFT F6` -- Previous word/excel document
+
+`CTRL+SHIFT+ESC` -- Task manager  
+requires some finger acrobatic, dubbed "ape grip"
+
 
 ## Outlook
 
@@ -144,46 +156,37 @@ In recipient field: `TAB`  -- Name completion
 
 `CTRL-U` -- Mark selected email as unread
 
-## Total Commander
+## Total Commander - Double commander
 
-* `Total Commander` is _by_ _far_ the most efficient tool  
-for working with files and directories
+* `Total Commander` - more efficient than Windows Explorer
 
-* There is no full equivalent under MacOS nor under Linux
+* Open source alternative: [Double commander](https://doublecmd.sourceforge.io/)
+ * Same keyboard shortcuts
+ * For `Windows`, `MacOS`, `Linux`
+ * Supports the plugins of Total Commander
 
-## History
+## Benefits
 
-* For over 25 years, `Total Commander` has the most efficient concept for working with files
+* All configuration stuff in a single file
 
-* Originally created as `Norton Commander` by Peter Norton
+* Stay on top of a huge number of directories
 
-* Rebranded since 2000 as `Total Commander`
+* Accomplish everything by keyboard
 
-* On the linux console: `Midnight Commander`
 
-* Fun fact: Peter Norton purchased some private love letters  
-written by Jerome Salinger ("The catcher in the Rye")  
-to return them unread.
+## Notebooks: Function keys mode
 
-![Norton and Salinger](both.jpg)
+* `F1` , `F2`, ... have two modes
+  * Either directly `F1` , `F2`, ...
+  * Or the upper special function such as `Volume up` or `Brightness down`
 
-## Always available
+* `Fn-Esc` inverts these modes
 
-* Am ZEW kommerziell lizensiert und vorinstalliert
+* Your function keys (`F1` , `F2` ...)  should be switched to _direct_ mode;
 
-* Kostenlose Shareware-Vollversion für privat; nur ein Fenster wegzudrücken
+  * Press `Fn-Esc` until the small LED below `Esc` is switched _off_
 
-* Man kann seine Konfiguration mit einer einzigen Datei von einem Computer zum nächsten mitnehmen
-
-* Gibt das berechtigte Gefühl der vollständigen Kontrolle über eine Vielzahl von Verzeichnissen
-
-* Mauslose Bedienung
-
-* Wenn man blind Zehnfinger kann, braucht man nie die Augen vom Bildschirm zu nehmen. Man kontrolliert visuell was man mit der Tastatur tut
-
-## Configuration
-
-* `Fn-Esc` - disable Funktion Keys als Lenovo Notebook Steuerung
+## Recommended configuration settings
 
 * Ansicht - Versteckte Dateien und Systemdateien anzeigen
 
@@ -199,16 +202,21 @@ to return them unread.
 
 Einstellungen speichern
 
-## Configuration sichern/übertragen
+## Configuration file 
 
-c:\Users\[your-windows-username]\AppData\Roaming\Ghisler\
-c:\Users\pbu\AppData\Roaming\Ghisler\
+All settings are in _one_ file `wincmd.ini`.
 
-    wincmd.ini
+  c:\Users\[your-windows-username]\AppData\Roaming\Ghisler\
 
-Start as administrator:
+For example, if the username is "pbu", then
+
+  c:\Users\pbu\AppData\Roaming\Ghisler\
+
+## Start as administrator:
 
 `SHIFT` `F10`  -  `Als` `Administrator` `ausführen`
+
+<!-- todo translate to English-->
 
 ## Suchen und markieren
 
@@ -367,3 +375,21 @@ Abbrechen mit `ESC`
 WinDirStat Freeware von heise.de runterladen
 
 * `Datei` - `Dateiattribute` `ändern` - nützlich um Änderungsdatum zu ändern - um Sortierung nach zuletzt geändert semantisch zu korrigieren.
+
+
+### Appendix: History of Total Commander
+
+* For over 25 years, `Total Commander` has the most efficient concept for working with files
+
+* Originally created as `Norton Commander` by Peter Norton
+
+* Rebranded since 2000 as `Total Commander`
+
+* On the linux console: `Midnight Commander`
+
+* Fun fact: Peter Norton purchased some private love letters  
+written by Jerome Salinger ("The catcher in the Rye")  
+to return them unread.
+
+![Norton and Salinger](both.jpg)
+
