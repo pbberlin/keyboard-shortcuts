@@ -37,7 +37,7 @@ Letters `X-C-V` are neighbors on the keyboard
 
 * file exchange with Terminal Servers
 
-* Even works in "Save as" dialogs
+* even works in "Save as" dialogs
 
 ## Windows Keys
 
@@ -59,6 +59,10 @@ Letters `X-C-V` are neighbors on the keyboard
 
 `WIN-R`  --   Execute any program (mnemonic: run)
 
+`CTRL+SHIFT+ESC` -- Task manager  
+requires some finger acrobatic, dubbed "ape grip"
+
+
 ## `WIN-R`  -  Examples
 
 `WIN-R   cmd` - command terminal
@@ -77,6 +81,7 @@ Letters `X-C-V` are neighbors on the keyboard
 
 `WIN-R   msinfo32` - system information
 
+
 ### Shutdown a program without any resistance
 
 `WIN-R   taskkill /IM chrome.exe /F`
@@ -85,7 +90,10 @@ Letters `X-C-V` are neighbors on the keyboard
 
 ## Web browser and tabs
 
-These work `Firefox` and `Chrome` and most other web browsers
+These work for `Firefox` and `Chrome` and most other web browsers
+
+`CTRL-TAB` -- next browser tab  
+`CTRL-SHIFT TAB` -- previous browser tab  
 
 `CTRL-T`  -- open new tab
 
@@ -94,9 +102,6 @@ These work `Firefox` and `Chrome` and most other web browsers
 `CTRL-SHIFT-T`  -- re-open recently closed tab
 
 `CTRL-L` -- cursor into address bar (for entering an URL)
-
-`CTRL-TAB` -- next browser tab  
-`CTRL-SHIFT TAB` -- previous browser tab  
 
 `CTRL-D` -- bookmark add/edit (mnemonic a<b>D</b>d bookmark)
 
@@ -132,9 +137,6 @@ Same purpose - but in MS office:
 `CTRL-F6` -- Next open word/excel document  
 `CTRL-SHIFT F6` -- Previous word/excel document
 
-`CTRL+SHIFT+ESC` -- Task manager  
-requires some finger acrobatic, dubbed "ape grip"
-
 
 ## Outlook
 
@@ -158,11 +160,13 @@ In recipient field: `TAB`  -- Name completion
 
 ## Total Commander - Double commander
 
-* `Total Commander` - more efficient than Windows Explorer
+* Ten times more efficient than Windows Explorer
 
-* Open source alternative: [Double commander](https://doublecmd.sourceforge.io/)
- * Same keyboard shortcuts
- * For `Windows`, `MacOS`, `Linux`
+* Open source alternative to Total Commander: 
+   [Double commander](https://doublecmd.sourceforge.io/)
+ * Small improvements to Total Commander
+ * Same keyboard shortcuts as Total Commander
+ * Supports `Windows`, `MacOS`, `Linux`
  * Supports the plugins of Total Commander
 
 ## Benefits
@@ -188,33 +192,62 @@ In recipient field: `TAB`  -- Name completion
 
 ## Recommended configuration settings
 
+<!-- German menu -->
+
 * Ansicht - Versteckte Dateien und Systemdateien anzeigen
 
 * Schnellsuche: Nur Buchstaben
 
 * Optional: Increase font size
 
-* Optional: Diverses - Keyboard - F2 - cm_RenameOnly
+* Only `Total Commander`: Diverses - Keyboard - F2 - cm_RenameOnly
 
-* Optional: SSH Plugin (ask pbu)
+* SSH Plugin by `Total Commander` - crucial update in 2023
 
-* Optional: Operation - Viewer/Editor - Notepad++ oder VSCode als `F4` Editor auswählen
+* Operation - Viewer/Editor - Notepad++ oder VSCode als `F4` Editor auswählen
 
-Einstellungen speichern
+* `Dual Commander` command shell - `wt` instead of `cmd.exe`  
+  boots Windows Terminal instead
+
+Menüpunkt `Einstellungen speichern` ausführen
 
 ## Configuration file 
+
+Include your settings into your personal backup.
 
 All settings are in _one_ file `wincmd.ini`.
 
   c:\Users\[your-windows-username]\AppData\Roaming\Ghisler\
+  c:\Users\[your-windows-username]\AppData\Roaming\doublecmd\
 
 For example, if the username is "pbu", then
 
   c:\Users\pbu\AppData\Roaming\Ghisler\
+  c:\Users\pbu\AppData\Roaming\doublecmd\
 
-## Start as administrator:
+
+## Command line
+
+Improved command line support in `Dual Commander`
+
+cm_FocusCmdLine                    Shift+F2              Focus to command line
+cm_ShowCmdLineHistory              Alt+F8                command history
+cm_AddPathToCmdLine                Ctrl+P                copy path to command line
+cm_AddFilenameToCmdLine            Ctrl+Enter            insert file name 
+cm_AddPathAndFilenameToCmdLine     Ctrl+Shift+Enter      insert file name plus path
+
+cm_ToggleFullscreenConsole         Ctrl+O                full screen toggle
+
+
+## Start as administrator
+
+* one time
 
 `SHIFT` `F10`  -  `Als` `Administrator` `ausführen`
+
+* permanently
+
+![start as admin](dual-commander-as-admin-sm.jpg)
 
 <!-- todo translate to English-->
 
