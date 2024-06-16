@@ -2,10 +2,12 @@
 
 <style> h2 {page-break-before: always}</style>
 
-* Windows, Web Browser and Total Commander
+* Windows, Web Browser and `Dual Commander` and `Total Commander`
 
 * [Peter Buchmann](https://pbberlin.github.io/)  
   7th December 2021
+
+* Last update 2024-06
 
 ## Cut - Copy - Paste  
 
@@ -88,6 +90,36 @@ requires some finger acrobatic, dubbed "ape grip"
 
 `WIN-R   taskkill /IM outlook.exe /F`
 
+## Desktop windows
+
+`ALT-TAB`       -- Next window  
+`ALT-SHIFT-TAB` -- Previous window
+
+`ALT-F4` -- Close  
+
+![Asking Bill Gates to shup up](key-alt-f4.jpg)  
+&nbsp; &nbsp; &nbsp; Mnemonic aid: Protest against speaker Bill Gates: 'shup up'
+
+`CTRL-TAB` -- Next browser tab  
+`CTRL-SHIFT TAB` -- Previous browser tab
+
+Same purpose - but in MS office:  
+`CTRL-F6` -- Next open word/excel document  
+`CTRL-SHIFT F6` -- Previous word/excel document
+
+
+`ALT-SPACE` -- Window menu  
+
+<!-- For instance `ALT-SPACE X` closes the current window
+
+![ALT-SPACE X](key-alt-space-x.jpg) -->
+
+![alt text](window-menu.jpg)
+
+
+`WIN-RIGHT`  --  Resize to right half of screen
+
+
 ## Web browser and tabs
 
 These work for `Firefox` and `Chrome` and most other web browsers
@@ -109,38 +141,10 @@ These work for `Firefox` and `Chrome` and most other web browsers
 
 `CTRL-H` -- browsing history
 
-## Desktop windows
-
-`ALT-SPACE` -- Window menu  
-
-<!-- For instance `ALT-SPACE X` closes the current window
-
-![ALT-SPACE X](key-alt-space-x.jpg) -->
-
-![alt text](window-menu.jpg)
-
-
-`WIN-RIGHT`  --  Resize to right half of screen
-
-`ALT-TAB`       -- Next window  
-`ALT-SHIFT-TAB` -- Previous window
-
-`ALT-F4` -- Close  
-
-![Asking Bill Gates to shup up](key-alt-f4.jpg)  
-&nbsp; &nbsp; &nbsp; Mnemonic aid: Protest against speaker Bill Gates: 'shup up'
-
-`CTRL-TAB` -- Next browser tab  
-`CTRL-SHIFT TAB` -- Previous browser tab
-
-Same purpose - but in MS office:  
-`CTRL-F6` -- Next open word/excel document  
-`CTRL-SHIFT F6` -- Previous word/excel document
-
-
 ## Outlook
 
-`CTRL-1` -- Email - `CTRL-2` - Calender
+`CTRL-1` -- Email  
+`CTRL-2` - Calender  
 
 `CTRL-N` -- New email
 
@@ -162,7 +166,7 @@ In recipient field: `TAB`  -- Name completion
 
 * Ten times more efficient than Windows Explorer
 
-* Open source alternative to Total Commander: 
+* Open source alternative to Total Commander:  
    [Double commander](https://doublecmd.sourceforge.io/)
  * Small improvements to Total Commander
  * Same keyboard shortcuts as Total Commander
@@ -180,15 +184,23 @@ In recipient field: `TAB`  -- Name completion
 
 ## Notebooks: Function keys mode
 
+* Dual/Total Commander make heavy use of function keys 
+  `F1` , `F2`, ...
+
+
 * `F1` , `F2`, ... have two modes
-  * Either directly `F1` , `F2`, ...
+  * Either directly `F1` , `F2`, ... (`"FnLock"`)
   * Or the upper special function such as `Volume up` or `Brightness down`
 
-* `Fn-Esc` inverts these modes
+* Switching is done using with the function key bottom left  
+  ![Fn key to toggle F keys](key-fn.jpg)
+
+
+* `Fn-Esc` inverts the default
 
 * Your function keys (`F1` , `F2` ...)  should be switched to _direct_ mode;
 
-  * Press `Fn-Esc` until the small LED below `Esc` is switched _off_
+  * Press `Fn-Esc` until the small LED below `Esc - FnLock` is switched _on_
 
 ## Recommended configuration settings
 
