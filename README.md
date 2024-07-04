@@ -27,11 +27,11 @@ Letters `X-C-V` are neighbors on the keyboard
 
 ### Usage for text
 
-* In Excel, Word, Notepad++, Stata Editor
+* In Excel, Word, Outlook, Stata Editor
 
 ### Usage for files
 
-* in Windows Explorer
+* In Windows Explorer
 
 ![file exchange windows exploer](explorer-file-exchange.jpg)
 
@@ -39,7 +39,7 @@ Letters `X-C-V` are neighbors on the keyboard
 
 * file exchange with Terminal Servers
 
-* even works in "Save as" dialogs
+* works even in "Save as" dialogs
 
 ## Windows Keys
 
@@ -75,7 +75,7 @@ requires some finger acrobatic, dubbed "ape grip"
 
 `WIN-R   notepad`
 
-`WIN-R   chrome`  - or firefox...
+`WIN-R   chrome`  - or `firefox`...
 
 `WIN-I   settings`
 
@@ -90,12 +90,12 @@ requires some finger acrobatic, dubbed "ape grip"
 
 `WIN-R   taskkill /IM outlook.exe /F`
 
-## Desktop windows
+## Manage applications 
 
 `ALT-TAB`       -- Next window  
 `ALT-SHIFT-TAB` -- Previous window
 
-`ALT-F4` -- Close  
+`ALT-F4` -- Close application  
 
 ![Asking Bill Gates to shup up](key-alt-f4.jpg)  
 &nbsp; &nbsp; &nbsp; Mnemonic aid: Protest against speaker Bill Gates: 'shup up'
@@ -103,7 +103,7 @@ requires some finger acrobatic, dubbed "ape grip"
 `CTRL-TAB` -- Next browser tab  
 `CTRL-SHIFT TAB` -- Previous browser tab
 
-Same purpose - but in MS office:  
+Cycle through `word documents`, `excel workbooks`:  
 `CTRL-F6` -- Next open word/excel document  
 `CTRL-SHIFT F6` -- Previous word/excel document
 
@@ -120,9 +120,9 @@ Same purpose - but in MS office:
 `WIN-RIGHT`  --  Resize to right half of screen
 
 
-## Web browser and tabs
+## Web browser
 
-These work for `Firefox` and `Chrome` and most other web browsers
+These work for `Firefox`, `Chrome` and most other web browsers
 
 `CTRL-TAB` -- next browser tab  
 `CTRL-SHIFT TAB` -- previous browser tab  
@@ -141,12 +141,19 @@ These work for `Firefox` and `Chrome` and most other web browsers
 
 `CTRL-H` -- browsing history
 
-## Outlook
+## Outlook main window
 
 `CTRL-1` -- Email  
-`CTRL-2` - Calender  
+`CTRL-2` -- Calender  
 
-`CTRL-N` -- New email
+`ENTER` -- Open selected email
+
+`CTRL-U` -- Mark selected email as unread
+
+`CTRL-N` -- New email (appointment when in calendar)
+
+
+### Outlook - while writing an email
 
 In recipient field: `TAB`  -- Name completion
 
@@ -156,35 +163,34 @@ In recipient field: `TAB`  -- Name completion
 
 `ALT + S` -- Send email
 
-`ENTER` -- Open selected email
-
 `ESC` -- Close opened email
 
-`CTRL-U` -- Mark selected email as unread
 
 ## Total Commander - Double commander
 
-* Ten times more efficient than Windows Explorer
-
-* Open source alternative to Total Commander:  
-   [Double commander](https://doublecmd.sourceforge.io/)
- * Small improvements to Total Commander
+### [Double commander](https://doublecmd.sourceforge.io/)
+ 
+ * Open source alternative to Total Commander
  * Same keyboard shortcuts as Total Commander
- * Supports `Windows`, `MacOS`, `Linux`
+ * Small improvements
+ * Supports `Windows`, `MacOS` and `Linux`
  * Supports the plugins of Total Commander
 
-## Benefits
+### Benefits
+
+* Structured and systematic
+
+* Everything can be done by keyboard
+
+* Once learned,  
+  you are forever ten times more efficient
 
 * All configuration stuff in a single file
-
-* Stay on top of a huge number of directories
-
-* Accomplish everything by keyboard
 
 
 ## Notebooks: Function keys mode
 
-* Dual/Total Commander make heavy use of function keys 
+* Dual/Total Commander make heavy use of function keys  
   `F1` , `F2`, ...
 
 
@@ -204,30 +210,38 @@ In recipient field: `TAB`  -- Name completion
 
 ## Recommended configuration settings
 
-<!-- German menu -->
+* All languages are supported
+
+* Following instructions are for _German_ language
 
 * Ansicht - Versteckte Dateien und Systemdateien anzeigen
 
-* Schnellsuche: Nur Buchstaben
-
-* Optional: Increase font size
-
-* Only `Total Commander`: Diverses - Keyboard - F2 - cm_RenameOnly
+* Optional: Decrease / increase font sizes
 
 * SSH Plugin by `Total Commander` - crucial update in 2023
 
 * Operation - Viewer/Editor - Notepad++ oder VSCode als `F4` Editor auswählen
 
-* `Dual Commander` command shell - `wt` instead of `cmd.exe`  
-  boots Windows Terminal instead
+
+* Only `Total Commander`: Schnellsuche: Nur Buchstaben
+
+* Only `Total Commander`: Diverses - Keyboard - F2 - cm_RenameOnly
+
+* Switch to `Windows Terminal`:  
+  * `Dual Commander`:   command shell - `wt` instead of `cmd.exe`  
+  * `Total Commander`: use the starter menu to create command `wt  -w 0  -d .`
+
 
 Menüpunkt `Einstellungen speichern` ausführen
 
-## Configuration file 
 
-Include your settings into your personal backup.
+## Single configuration file 
 
-All settings are in _one_ file `wincmd.ini`.
+All settings are in a _single_ file `wincmd.ini`.
+
+The configuration file also stores your SSH and FTP connections.
+
+Include the configuration file into your personal backup.
 
   c:\Users\[your-windows-username]\AppData\Roaming\Ghisler\
   c:\Users\[your-windows-username]\AppData\Roaming\doublecmd\
@@ -242,11 +256,11 @@ For example, if the username is "pbu", then
 
 Improved command line support in `Dual Commander`
 
-cm_FocusCmdLine                    Shift+F2              Focus to command line
-cm_ShowCmdLineHistory              Alt+F8                command history
-cm_AddPathToCmdLine                Ctrl+P                copy path to command line
-cm_AddFilenameToCmdLine            Ctrl+Enter            insert file name 
-cm_AddPathAndFilenameToCmdLine     Ctrl+Shift+Enter      insert file name plus path
+cm_FocusCmdLine                    Shift+F2              Focus to command line  
+cm_ShowCmdLineHistory              Alt+F8                command history  
+cm_AddPathToCmdLine                Ctrl+P                copy path to command line  
+cm_AddFilenameToCmdLine            Ctrl+Enter            insert file name   
+cm_AddPathAndFilenameToCmdLine     Ctrl+Shift+Enter      insert file name plus path  
 
 cm_ToggleFullscreenConsole         Ctrl+O                full screen toggle
 
@@ -422,7 +436,7 @@ WinDirStat Freeware von heise.de runterladen
 * `Datei` - `Dateiattribute` `ändern` - nützlich um Änderungsdatum zu ändern - um Sortierung nach zuletzt geändert semantisch zu korrigieren.
 
 
-### Appendix: History of Total Commander
+## Appendix: History of Total Commander
 
 * For over 25 years, `Total Commander` has the most efficient concept for working with files
 
